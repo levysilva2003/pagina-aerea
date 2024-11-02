@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../css/cadastro.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cadastro</h1>
+        </header>
+        <section class="informacoes-pessoais">
+            <h2>Informações Pessoais</h2>
+            <form>
+                <fieldset>
+                    <!-- Campos do formulário -->
+                    <div class="form-group">
+                        <label for="input-cpf">CPF</label>
+                        <input id="input-cpf" type="text" name="input-cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" title="Digite o CPF no formato 000.000.000-00" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="input-name">Nome Completo</label>
+                        <input type="text" name="name" id="input-name" placeholder="Digite seu nome completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="input-data">Data de Nascimento</label>
+                        <input type="date" name="data" id="input-data" placeholder="dd/mm/aa" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="input-tel">Celular (Código de área + Número)</label>
+                        <input type="tel" name="telefone" id="input-tel" placeholder="Digite o Código + N°">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-senha">Senha</label>
+                        <input type="password" name="senha" id="input-senha" placeholder="Digite a senha">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-repetir-senha">Repetir Senha</label>
+                        <input type="password" name="senha-repetir" id="input-repetir-senha" placeholder="Digite a senha novamente">
+                    </div>
+                    <div class="form-group">
+                        <label for="genero">Gênero</label>
+                        <select name="genero" id="genero">
+                            <option value="Masculino">Masculino</option>
+                            <option value="Feminino">Feminino</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="termos">
+                            <input type="checkbox" name="termos" id="termos"> Declaro que li e estou de acordo com os <a href="#">termos e regras</a>
+                        </label>
+                    </div>
+                </fieldset>
+                <button type="submit">Finalizar Cadastro</button>
+            </form>
+        </section>
+    </div>
+    <script src="../js/cadastro.js" defer></script>
+</body>
+</html>

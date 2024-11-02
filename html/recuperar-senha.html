@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Senha</title>
+    <link rel="stylesheet" href="/css/recuperacao-senha-style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Recuperação de Senha</h1>
+        <p class="message">Digite seu endereço de e-mail para que possamos enviar um link para recuperação de senha.</p>
+        <form action="/enviar-recuperacao" method="post">
+          <label for="email">Endereço de E-mail:</label><br>
+          <input style="margin-top: 5px;" type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+          <input type="submit" value="Enviar Link de Recuperação">
+        </form>
+      </div>
+</body>
+
+</html>

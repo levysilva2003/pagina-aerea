@@ -1,0 +1,12 @@
+/* Adicione aqui seu estilo CSS para a página de exibição de dados */
+.container {
+    margin: 20px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+}
